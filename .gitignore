@@ -6,3 +6,5 @@ node_modules/
 
 # dotenv env variable files
 .env
+
+notes.txt
