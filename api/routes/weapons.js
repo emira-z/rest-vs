@@ -8,8 +8,13 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
+    const weapon = {
+        id: req.body.id,
+        weaponName: req.body.weaponName
+    };
     res.status(201).json({
-        message: 'Handling POST requests to /weapons'
+        message: 'Handling POST requests to /weapons',
+        createdWeapon: weapon
     });
 });
 
